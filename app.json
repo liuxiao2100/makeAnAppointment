@@ -1,0 +1,50 @@
+{
+  "debug": true,
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/survey/survey",
+    "pages/me/me",
+    "pages/info/info",
+    "pages/article/article",
+    "pages/myRecord/myRecord"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "揭阳市人民医院体检中心",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7F8389",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "list": [
+      {
+        "text": "首页",
+        "selectedIconPath": "resources/selected/首页.png",
+        "pagePath": "pages/home/home",
+        "iconPath": "resources/icon/首页.png"
+      },
+      {
+        "text": "预约",
+        "selectedIconPath": "resources/selected/问卷调查.png",
+        "pagePath": "pages/survey/survey",
+        "iconPath": "resources/icon/问卷调查.png"
+      },
+      {
+        "text": "资讯",
+        "pagePath": "pages/info/info",
+        "iconPath": "resources/icon/资讯2.png",
+        "selectedIconPath": "resources/selected/资讯2.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/me/me",
+        "iconPath": "resources/icon/我的.png",
+        "selectedIconPath": "resources/selected/我的.png"
+      }
+    ],
+    "backgroundColor": "#F7F7FA"
+  }
+}

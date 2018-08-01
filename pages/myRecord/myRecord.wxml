@@ -1,0 +1,63 @@
+<!--pages/myRecord/myRecord.wxml-->
+<view class="index">
+  <view class="index-title">
+    {{ title }}
+  </view>
+  <view class="index-books">
+    <view class="index-books__showLayer">
+      <view class="index-books__item" wx:for="{{ bookList }}" wx:key="{{ index }}">
+        <view class="index-books__title">预约:</view>
+        <view class="index-books__controls--show" >{{ item.name }}
+          <text> {{item.date}}</text>
+        </view>
+        <button class="index-books__controls--edit-btn btn" type="primary" data-statu="open" data-book-id="{{ item.id }}" data-index="{{index}}" bindtap= 'powerDrawer' > 
+        <!-- editBookButtonClicked -->
+          编辑
+        </button>
+        <button class="index-books__controls--delete btn" type="warn" data-book-id="{{ item.id }}" bindtap="deleteBook">
+          删除
+        </button>
+      </view>
+    </view>
+  </view>
+  <!--mask-->
+  <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+  <!--content-->
+  <!--使用animation属性指定需要执行的动画-->
+  <view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+
+    <!--drawer content-->
+    <view class="drawer_title">修改预约信息</view>
+    <view class="drawer_content">
+      <view class="top grid">
+        <label class="title col-0">姓名</label>
+        <input class="input_base input_h30 col-1" name="xm" value="{{uName}}" bindinput='unameInput'></input>
+      </view>
+      <view class="top grid">
+        <label class="title col-0">预约日期</label>
+        <input class="input_base input_h30 col-1" name="yyrq" value="{{uDate}}" bindinput='bindDateChange'></input>
+      </view>
+      <view class="top grid">
+        <label class="title col-0">预约时间段</label>
+        <input class="input_base input_h30 col-1" name="yysjd" value="{{when}}" bindinput='bindWhenChange'></input>
+      </view>
+      <view class="top grid">
+        <label class="title col-0">身份证号</label>
+        <input class="input_base input_h30 col-1" name="sfzh" value="{{uID}}" bindinput='uidInput'></input>
+      </view>
+      <view class="top grid">
+        <label class="title col-0">手机号</label>
+        <input class="input_base input_h30 col-1" name="sjh" value="{{uPhone}}" bindinput='uphoneInput'></input>
+      </view>
+      <view class="top grid">
+        <label class="title col-0">性别</label>
+        <input class="input_base input_h30 col-1" name="xb" value="{{isMale}}" bindinput='genderInput'></input>
+      </view>
+      <view class="top bottom grid">
+        <label class="title col-0">备注</label>
+        <input class="input_base input_h30 col-1" name="bz" value="{{remark}}" bindinput='remarkInput'></input>
+      </view>
+    </view>
+    <view class="btn_ok" bindtap="powerDrawer" bindtouchend='updateBook' data-statu="close">确定</view>
+  </view>
+</view>

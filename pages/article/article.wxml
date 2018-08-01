@@ -1,0 +1,15 @@
+<!--pages/article/article.wxml-->
+<import src='../../wxParser/index.wxml' />
+
+<!-- 页面头部：显示标题和时间 -->
+<view class='page_hd'>
+  <view class='page_title'>{{title}}</view>
+  <view class='page_desc'>{{createdAt}}</view>
+</view>
+
+<!-- 页面主体：显示文章内容 -->
+<view class='page_bd'>
+  <view class='wxParser'>
+    <template is='wxParser' data='{{wxParserData:richText.nodes}}' />
+  </view>
+</view>

@@ -1,0 +1,43 @@
+<!--pages/me/me.wxml-->
+<view class='me-view'>
+  <view class='me-top'>
+    <!-- <text class='me-top-text'>个人中心</text> -->
+    <view class='me-top-view'>
+      <!-- <image class='top-image' src='../../resources/me/头像.jpg' mode='scaleToFill'></image> -->
+      <view class="userinfo-avatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName" lang="zh_CN"></open-data>
+    </view>
+  </view>
+  <view class='me-down'>
+    <view class='me-down-view' bindtap='bindMyOrder'>
+      <image class='down-image' src='../../resources/me/预约.png' mode='scaleToFill'></image>
+      <text class='down-text'>我的预约</text>
+    </view>
+    <view class='me-down-view' bindtap='bindMyCard'>
+      <image class='down-image' src='../../resources/me/卡.png' mode='scaleToFill'></image>
+      <text class='down-text'>我的就诊卡</text>
+    </view>
+    <view class='me-down-view' bindtap='bindReport'>
+      <image class='down-image' src='../../resources/me/报告.png' mode='scaleToFill'></image>
+      <text class='down-text'>体检报告</text>
+    </view>
+    <view class='me-down-view' bindtap='bindMyScore'>
+      <image class='down-image' src='../../resources/me/评价.png' mode='scaleToFill'></image>
+      <text class='down-text'>我的评价</text>
+    </view>
+    <!-- <view class='me-down-view' bindtap='bindContact'>
+      <button open-type="contact" class='contacButton'>
+        <image class='down-image' src='../../resources/me/我们.png' mode='scaleToFill'></image>
+        <text class='down-text'>联系我们</text>
+      </button>
+    </view> -->
+    <button open-type="contact" class='contacButton'>
+      <view class='me-down-view'>
+        <image class='down-image' src='../../resources/me/我们.png' mode='scaleToFill'></image>
+        <text class='down-text'>联系我们</text>
+      </view>
+    </button>
+  </view>
+</view>

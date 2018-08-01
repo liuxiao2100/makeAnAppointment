@@ -1,0 +1,251 @@
+.home-view {
+  height: 100%;
+  display:flex;
+  flex-direction:column;
+  margin-top:0rpx;
+  padding-top:0rpx;
+  margin-bottom:0rpx;
+  padding-bottom:0rpx;
+  justify-content:space-between; 
+  background-color:rgb(230, 227, 227);
+  align-items:stretch;
+}
+
+.swiper {
+  height: 320rpx;
+  width: 100%;
+}
+
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+.middle-image1 {
+  display: flex;
+  width:100rpx;
+  height:100rpx;
+  background-color:rgb(11, 195, 238);
+  border-radius:20rpx;
+  margin-top:0rpx;
+  padding-top:0rpx;
+  padding-bottom:0rpx;
+  margin-bottom:16rpx;
+
+}
+
+.middle-image2 {
+  display: flex;
+  width:80rpx;
+  height:80rpx;
+  background-color:rgb(183, 212, 19);
+  border-radius:20rpx;
+  margin-right:20rpx;
+
+}
+
+.middle-image3 {
+  display: flex;
+  background-color:rgb(11, 157, 39);
+  width:80rpx;
+  height:80rpx;
+  margin-right:20rpx;
+  border-radius:20rpx;
+  margin-bottom: 20rpx;
+}
+
+.middle {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:284rpx;
+  margin:12rpx 12rpx 6rpx;
+  background-color:rgb(254, 248, 248);
+  border-radius:30rpx;
+  margin-left:12rpx;
+}
+
+.middle-left {
+  min-height: 160rpx;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:50%;
+  height:250rpx;
+  background-color:rgb(254, 248, 248);
+  border-radius:30rpx;
+  border-width:2rpx;
+  border-style:none none none none;
+  margin-left:0px;
+  border-color:rgb(159, 154, 154);
+  border-bottom-color:rgba(159,154,154,1);
+  border-top-color:rgba(159,154,154,1);
+  border-right-color:rgba(159,154,154,1);
+  border-left-color:rgba(159,154,154,1);
+}
+
+.middle-right-up-text {
+  width:28%;
+  height:10%;
+  display:flex;
+  flex-direction:column;
+}
+
+.middle-right-down-text {
+  width:28%;
+  height:10%;
+  display:flex;
+  flex-direction:column;
+}
+
+.text {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-family:SimHei;
+  font-size:32rpx;
+  width:224rpx;
+  margin-bottom:6rpx;
+}
+
+.addition {
+  display: flex;
+  font-size: 22rpx;
+  color: #ae9797;
+  justify-content: center;
+  align-items:center;
+  width:222rpx;
+}
+
+.middle-right {
+  width:50%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+  height:250rpx;
+  background-color:rgb(254, 248, 248);
+  border-radius:30rpx;
+  margin-right:0rpx;
+  border-width:2rpx;
+  border-color:rgb(159, 154, 154);
+  border-left-style:dotted; 
+}
+
+.middle-right-up {
+  display:flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+  width:280rpx;
+  margin-top:20rpx;
+  padding-top:0rpx;
+  padding-bottom:0rpx;
+}
+
+.middle-right-down {
+  display:flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+  width:280rpx;
+  margin-top:10rpx;
+  padding-top:0rpx;
+  padding-bottom:0rpx;
+}
+
+.third {
+  display:flex;
+  justify-content:space-between;
+  background-color:rgb(254, 248, 248);
+  height:260rpx;
+  align-items:center;
+  border-radius:30rpx;
+  margin:10rpx 12rpx 12rpx;
+  padding-bottom:0rpx;
+  margin-top:6rpx;
+}
+
+.third-first {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+  width:122rpx;
+  margin-top:0rpx;
+  margin-bottom:0rpx;
+  padding-top:0rpx;
+  padding-bottom:0rpx;
+}
+
+.third-image {
+  width:80rpx;
+  height:80rpx;
+  background-color:rgb(188, 217, 245);
+  border-radius:20rpx;
+  margin-top:0rpx;
+  padding-top:0rpx;
+  padding-bottom:0rpx;
+}
+
+.third-text {
+  font-size:24rpx;
+}
+
+.fourth {
+  background: -moz-linear-gradient(center top, rgb(8, 110, 213),rgb(5, 93, 181)) repeat-x scroll 0% 0% rgb(7, 103, 200);
+  border-color:rgb(0, 0, 0);
+  background-color:rgb(95, 148, 238);
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  color:rgb(255, 249, 249);
+  font-family:SimSun;
+  font-weight:900;
+  font-size:42rpx;
+  letter-spacing:2rpx;
+  text-indent:2rpx;
+  line-height:2em;
+  height:23%;
+}
+
+.fourth-image {
+  width:25%;
+  height:152rpx;
+}
+
+.fourth-text {
+  display:flex;
+  flex-direction:row;
+  width:600rpx;
+}
+
+.fourth-text1 {
+  color: #fff9f9;
+  font-size: 42rpx;
+  margin-left:24rpx;
+}
+
+.fourth-button {
+  font-size:20rpx;
+  height:50rpx;
+  margin-left:-220rpx;
+  width:195rpx;
+  padding-top:0rpx;
+  margin-top:12rpx;
+  font-family:SimSun;
+  margin-right:0rpx;
+}
+
+.contacButton {
+  background-color: rgb(254, 248, 248);
+  padding: 0rpx;
+  margin: 0rpx;
+  font-size: inherit;
+  display: flex;
+  line-height: 1.4;
+}
+
+.contacButton::after {
+  border: rgb(254, 248, 248) solid;
+}

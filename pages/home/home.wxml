@@ -1,0 +1,62 @@
+<!--pages/home/home.wxml-->
+<view class='home-view'>
+  <swiper class='swiper' indicator-dots='true' autoplay='true' interval='5000' duration='1000'>
+    <block wx:for="{{calls}}" wx:for-index='index'>
+      <swiper-item>
+        <image src='{{item.url}}' class='slide-image' mode='scaleToFill'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='middle'>
+    <view class='middle-left' bindtap='bindOpenMenu'>
+      <image class='middle-image1' src='../../resources/home/套餐.png' mode="scaleToFill"></image>
+      <text class='text'>体检套餐</text>
+      <text class='addition'>体检套餐精选</text>
+    </view>
+    <view class='middle-right'>
+      <view class='middle-right-up' bindtap='bindOpenOrder'>
+        <image class='middle-image2' src='../../resources/home/定制.png' mode="scaleToFill"></image>
+        <view class='middle-right-up-text'>
+          <text class='text'>私人订制</text>
+          <text class='addition'>体检自定义定制</text>
+        </view>
+      </view>
+      <view class='middle-right-down' bindtap='bindOpenSurvey'>
+        <image class='middle-image3' src='../../resources/home/预约.png' mode="scaleToFill"></image>
+        <view class='middle-right-down-text'>
+          <text class='text'>体检预约</text>
+          <text class='addition'>提交个人信息</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='third'>
+    <view class='third-first' bindtap='bindOpenArticle1st'>
+      <image class='third-image' src='../../resources/home/须知.png' mode="scaleToFill"></image>
+      <text class='third-text'>体检须知</text>
+    </view>
+    <view class='third-first' bindtap='bindOpenArticle2nd'>
+      <image class='third-image' src='../../resources/home/体检流程.png' mode="scaleToFill"></image>
+      <text class='third-text'>体检流程</text>
+    </view>
+    <view class='third-first' bindtap='bindOpenArticle3rd'>
+      <image class='third-image' src='../../resources/home/特色.png' mode="scaleToFill"></image>
+      <text class='third-text'>体检特色</text>
+    </view>
+    <button open-type="contact" class='contacButton'>
+      <view class='third-first'>
+        <image class='third-image' src='../../resources/home/客服.png' mode="scaleToFill"></image>
+        <text class='third-text'>在线咨询</text>
+      </view>
+    </button>
+    <view class='third-first' bindtap='bindOpenCoupon'>
+      <image class='third-image' src='../../resources/home/优惠券.png' mode="scaleToFill"></image>
+      <text class='third-text'>优惠券</text>
+    </view>
+  </view>
+  <view class='fourth'>
+    <image class='fourth-image' src='../../resources/home/医院.png' mode="scaleToFill"></image>
+    <text class='fourth-text'> 公立医院 
+        健康体检中心预约平台</text>
+  </view>    
+</view>

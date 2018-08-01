@@ -1,0 +1,27 @@
+/* pages/info/info.wxss */
+/* 页面描述 */
+.page_desc {
+  margin: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* 页面主体 */
+.page_bd {
+  padding: 0px 20px;
+}
+
+/* 日记标题显示框 */
+.article-list_item {
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+/* 日记标题 */
+.article-list_item-title {
+  padding: 15px;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}

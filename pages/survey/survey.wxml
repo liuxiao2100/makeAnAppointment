@@ -1,0 +1,64 @@
+<!--pages/survey/survey.wxml-->
+<view class='page_desc'>体检预约信息填写</view>
+<view class="container">
+  <view class="formtable">
+    <view class="item">
+      <view class="item-info">预约人姓名：</view>
+      <view>
+        <input type="text" bindinput="unameInput" value='{{form_info}}'/>
+      </view>
+    </view>
+    <!-- <view class="item">
+      <view class="item-info">预约日期：</view>
+      <view>
+        <input type="number" bindinput="udateInput" />
+      </view>
+    </view> -->
+    <view class='item'>
+      <view class='item-info'>预约日期：</view>
+      <picker mode="date" value="{{uDate}}" start="{{startDate}}" end="{{endDate}}" bindchange="bindDateChange">
+        <view class='picker'>{{uDate}}</view>
+      </picker>
+    </view>
+    <view class='item'>
+      <view class='item-info'>预约时间段：</view>
+      <picker mode="selector" value='{{index}}' range="{{objectArray}}" bindchange='bindPickerChange'>
+        <view class='picker'>时间段 ： {{objectArray[index]}}</view>
+      </picker>
+    </view>
+    <view class="item">
+      <view class="item-info">身份证号：</view>
+      <view>
+        <input type="idcard" bindinput="uidInput" value='{{form_info}}'/>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-info">手机号码：</view>
+      <view>
+        <input type="number" bindinput="uphoneInput" value='{{form_info}}'/>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-info">性别：</view>
+      <view>
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio" wx:for="{{radio_items}}" wx:key="id">
+            <radio value="{{item.value}}" checked="{{item.checked}}" />{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-info">留言：</view>
+      <view>
+        <input type="text" bindinput="remarkInput" value='{{form_info}}'/>
+      </view>
+    </view>
+    <view class="item">
+      <button class="submit-btn" type="primary" bindtap="btnClick">提交</button>
+    </view>
+    <view class="item">
+      <button open-type="contact">有问题请联系客服</button>
+    </view>
+  </view>
+</view>

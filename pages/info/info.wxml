@@ -1,0 +1,14 @@
+<!--pages/info/info.wxml-->
+<!-- <view class='page_desc'>医院体检小程序资讯，使用知晓云内容库</view> -->
+
+<view class='page_bd'>
+
+  <block wx:for='{{article_list}}' wx:key='id'>
+    <view class='article-list_item'>
+      <view data-id='{{item.id}}' class='article-list_item-title' bindtap='bindOpenArticle'>
+        {{item.title}}
+      </view>
+    </view>
+  </block>
+
+</view>

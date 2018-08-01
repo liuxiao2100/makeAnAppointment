@@ -1,0 +1,36 @@
+/* pages/survey/survey.wxss */
+.item {
+   /* display: flex;
+  flex-direction: row;  */
+  align-items: left;
+  margin-top: 10px;
+}
+
+.item-info {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.picker, .item input {
+  border: solid 1px #cdcdcd;
+  padding: 5px;
+  margin: 5px;
+  height: 30px;
+}
+
+/* .picker {
+  border: solid 1px #cdcdcd;
+  padding: 5px;
+  margin: 5px;
+} */
+
+.page_desc {
+  margin: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.formtable {
+  width: 70%;
+}
