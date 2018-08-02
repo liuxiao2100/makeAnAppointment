@@ -46,7 +46,7 @@
     <button open-type="contact" class='contacButton'>
       <view class='third-first'>
         <image class='third-image' src='../../resources/home/客服.png' mode="scaleToFill"></image>
-        <text class='third-text'>在线咨询</text>
+        <text class='third-text'>在线客服</text>
       </view>
     </button>
     <view class='third-first' bindtap='bindOpenCoupon'>
@@ -56,7 +56,10 @@
   </view>
   <view class='fourth'>
     <image class='fourth-image' src='../../resources/home/医院.png' mode="scaleToFill"></image>
-    <text class='fourth-text'> 公立医院 
+    <view class='fourth-text'>
+    <text class='fourth-text1'> 公立医院 
         健康体检中心预约平台</text>
+    <button class='fourth-button'>点击了解更多</button>
+    </view>
   </view>    
 </view>

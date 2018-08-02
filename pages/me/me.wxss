@@ -1,5 +1,5 @@
 /* pages/me/me.wxss */.me-view {
-  height:1080rpx;
+   height:1080rpx;
   background-color:rgb(246, 246, 246);
   display:flex;
   flex-direction:column;
@@ -8,7 +8,7 @@
   }
 
 .me-top {
-  background-color:rgb(34, 176, 228);
+  background: linear-gradient(to bottom, #48B9F5, #037EBF);
   height:350rpx;
   display:flex;
   justify-content:center;
@@ -97,7 +97,7 @@
   line-height:2em;
   font-family:SimHei;
 }
-
+ 
 .contacButton {
   display: flex;
   background-color: #FFF;
@@ -105,7 +105,7 @@
   margin: 0;
   font-size: inherit;
 }
-
+ 
 .contacButton::after {
   border: #FFF solid;
 }
@@ -119,7 +119,7 @@
   flex-direction: column;
   align-items: center;
 }
-
+ 
 .userinfo-avatar {
   overflow:hidden;
   display: block;
@@ -131,7 +131,7 @@
   border: 4rpx solid #fff;
   box-shadow: 6rpx 6rpx 20rpx rgba(0, 0, 0, 0.2);
 }
-
+ 
 .me-top-view text {
   /* color: #fff; */
   font-size: 56rpx;
