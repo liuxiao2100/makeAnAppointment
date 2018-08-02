@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.91",
 	"appid": "wx9715e54bafb287f5",
-	"projectname": "makeAnAppointmen",
+	"projectname": "makeAnAppointment",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
