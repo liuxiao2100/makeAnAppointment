@@ -214,6 +214,10 @@ Page({
     });
   },
 
+  btnTest: function(){
+    console.log('This is a Testing Button');
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

@@ -60,5 +60,8 @@
     <view class="item">
       <button open-type="contact">有问题请联系客服</button>
     </view>
+    <view class="item">
+      <button class="submit-btn" type="primary" bindtap="btnTest">测试按钮</button>
+    </view>
   </view>
 </view>
