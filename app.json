@@ -7,8 +7,7 @@
     "pages/me/me",
     "pages/info/info",
     "pages/article/article",
-    "pages/myRecord/myRecord",
-    "pages/login/login"
+    "pages/myRecord/myRecord"
   ],
   "window": {
     "backgroundTextStyle": "light",
