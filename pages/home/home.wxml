@@ -41,7 +41,7 @@
     </view>
     <view class='third-first' bindtap='bindOpenArticle3rd'>
       <image class='third-image' src='../../resources/home/特色.png' mode="scaleToFill"></image>
-      <text class='third-text'>体检特色</text>
+      <text class='third-text'>体检项目</text>
     </view>
     <button open-type="contact" class='contacButton'>
       <view class='third-first'>

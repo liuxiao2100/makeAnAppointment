@@ -7,12 +7,13 @@
     "pages/me/me",
     "pages/info/info",
     "pages/article/article",
-    "pages/myRecord/myRecord"
+    "pages/myRecord/myRecord",
+    "pages/formSubmit/formSubmit"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "揭阳市人民医院体检中心",
+    "navigationBarTitleText": "揭阳市人民医院健康管理中心",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -29,7 +30,7 @@
       {
         "text": "预约",
         "selectedIconPath": "resources/selected/问卷调查.png",
-        "pagePath": "pages/survey/survey",
+        "pagePath": "pages/formSubmit/formSubmit",
         "iconPath": "resources/icon/问卷调查.png"
       },
       {
